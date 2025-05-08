@@ -234,7 +234,7 @@ public class ProfiledCasesCounter<T extends AlterationCountBase> {
           ((AlterationCountByStructuralVariant) alterationCount).getGene2HugoGeneSymbol();
       List<GenePanel> panels =
           entrezIdToGenePanel.getOrDefault(
-              new Pair<>(gene1EntrezId, gene2HugoSymbol), new ArrayList<>());
+              new Pair<>(gene1EntrezId, gene1HugoSymbol), new ArrayList<>());
       panels.addAll(
           entrezIdToGenePanel.getOrDefault(
               new Pair<>(gene2EntrezId, gene2HugoSymbol), new ArrayList<>()));
